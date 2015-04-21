@@ -5,3 +5,13 @@ custom_cms_cms_user:
 custom_cms_homepage:
     path:     /
     defaults: { _controller: CustomCMSBundle:Default:index }
+
+login:
+    path: /login
+    defaults: { _controller: CustomCMSBundle:Security:login }
+
+login_check:
+    path: /login_check
+
+logout:
+    pattern: /logout
