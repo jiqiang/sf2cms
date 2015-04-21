@@ -78,7 +78,7 @@ class User implements UserInterface
      */
     public function setPassword($password)
     {
-        $this->password = base64_encode($password);
+        $this->password = password_hash($password, PASSWORD_BCRYPT);
 
         return $this;
     }
