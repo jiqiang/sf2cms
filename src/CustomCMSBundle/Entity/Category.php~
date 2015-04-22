@@ -77,37 +77,4 @@ class Category
     {
         return $this->name;
     }
-
-    /**
-     * Add pages
-     *
-     * @param \CustomCMSBundle\Entity\Page $pages
-     * @return Category
-     */
-    public function addPage(\CustomCMSBundle\Entity\Page $pages)
-    {
-        $this->pages[] = $pages;
-
-        return $this;
-    }
-
-    /**
-     * Remove pages
-     *
-     * @param \CustomCMSBundle\Entity\Page $pages
-     */
-    public function removePage(\CustomCMSBundle\Entity\Page $pages)
-    {
-        $this->pages->removeElement($pages);
-    }
-
-    /**
-     * Get pages
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getPages()
-    {
-        return $this->pages;
-    }
 }
